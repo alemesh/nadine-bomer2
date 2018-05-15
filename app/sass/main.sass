@@ -1,0 +1,651 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+//======================================
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0 auto
+
+.main-holder
+	overflow: hidden
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 25px
+	position: relative
+
+
+//======================================
+
+.wrap-nadine-bomer
+	.header
+		position: relative
+		width: 100%
+		min-height: 720px
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+
+	.signature
+		img
+			max-height: 85px
+	.hidden-desctop
+		display: none
+	.title-section
+		position: relative
+		display: flex
+		justify-content: center
+		flex-direction: column
+		text-align: center
+		margin-top: 10px
+		.wrap-title
+			//border-right: 2px solid black
+			direction: rtl
+			padding: 0 25px 0 0
+		.title
+			font-size: 42px
+			font-family: "OpenSansHebrew-Bold"
+			color: #01bac6
+			font-weight: bold
+			line-height: 1.2
+		span
+			font-size: 31px
+			font-family: "OpenSansHebrew-Light"
+			color: #01bac6
+			line-height: 1.2
+
+
+		//============== form section ===================
+		//.main-holder
+		//	overflow: visible
+			//min-height: 912px
+
+	.wrap-form-hold
+		//position: absolute
+		//bottom: 0
+		//left: 0
+		//width: 100%
+		//padding: 0 30px
+		margin-top: -150px
+		.main-holder
+			overflow: visible
+
+	.form-hold
+		z-index: 2222222
+		//background: #f8be20
+		padding: 30px 60px
+		min-height: 160px
+		width: 100%
+		position: relative
+		border-radius: 79px
+		background-color: black
+		//opacity: .75
+		input, textarea
+			&::placeholder
+				color: #b9b9b9
+
+		h3
+			direction: rtl
+			text-align: center
+			font-family: "OpenSansHebrew-Bold"
+			font-size: 24px
+			margin: 0 0 30px
+			color: white
+			font-weight: bold
+			line-height: 1.002
+
+		.form
+			direction: rtl
+			max-width: 1150px
+			margin: 0 auto
+			position: relative
+			transition: opacity 0.2s ease-in-out
+
+		.form-row-wrap
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -8px
+
+		.form-row
+			width: 17%
+			padding: 0 8px
+
+
+
+		.form-control
+			padding: 10px
+			direction: rtl
+			display: block
+			width: 100%
+			height: 50px
+			border: none
+			border-radius: 27px
+			outline: none
+			font-size: 17px
+			font-family: "OpenSansHebrew-Regular"
+			line-height: 1.2
+			text-decoration: none
+			transition: all .5s ease
+			color: rgb(186, 186, 186)
+
+
+
+			&:hover
+				//background-color: #dad8d2
+				border: 1px solid #ffc20e
+				text-decoration: none
+				color: #111
+		.wrap-btn
+			width: 15%
+		//.wrap-btn
+		//	position: relative
+		//	&:after
+		//		content: ''
+		//		position: absolute
+		//		border: none
+		//		outline: 0
+		//		top: 50%
+		//		left: 37%
+		//		width: 11px
+		//		height: 11px
+		//		border-left: 2px solid white
+		//		border-top: 2px solid white
+		//		//z-index: 99999
+		//		transform: translateY(-50%) rotate(-45deg)
+		//		z-index: 99999
+
+		.btn
+			background: #ffc20e
+			font-family: "OpenSansHebrew-Regular"
+			color: white
+			text-align: center
+			height: 50px
+			border: none
+			border-radius: 27px
+			outline: none
+			display: block
+			width: 100%
+			font-size: 23px
+			text-decoration: none
+			transition: all .5s ease
+			&:hover
+				background-color: #e9ae01
+				text-decoration: none
+				box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.3)
+
+	.main-section
+		width: 100%
+		//min-height: 1370px
+		position: relative
+		background-image: url(../img/background-main-section.png)
+		background-size: cover
+		background-position: right
+		margin-top: -230px
+		padding-top: 300px
+		//opacity: 0.75
+		.section-content
+			position: relative
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			direction: rtl
+			//width: 60%
+			//margin: 0 5px 0 0
+			padding: 0 15px
+			.mobile-button
+				display: none
+		.first-content
+			width: 60%
+			p
+				font-size: 18.282px
+				font-family: "OpenSansHebrew-Regular"
+				color: rgb(255, 255, 255)
+				line-height: 1.805
+				margin-bottom: 75px
+
+		.title-first-content
+			font-size: 30px
+			font-family: "OpenSansHebrew-Light"
+			color: rgb(255, 255, 255)
+			font-weight: bold
+			line-height: 1.2
+			margin-bottom: 20px
+
+		.second-content
+			width: 60%
+			margin-bottom: 120px
+			ul
+				position: relative
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				margin: 0 -15px
+				padding: 0
+			li
+				padding: 0 15px
+				list-style: none
+				font-size: 34px
+				font-family: "OpenSansHebrew-Regular"
+				color: rgb(255, 255, 255)
+				line-height: 1.029
+				display: flex
+				justify-content: center
+				align-items: center
+				.second-item
+					padding: 0 15px 0 0
+
+			.wrap-img
+				//border-radius: 50%
+				//background-color: #4dcfd7
+				min-height: 100px
+				min-width: 110px
+
+		.title-second-content
+			font-size: 30px
+			font-family: "OpenSansHebrew-Light"
+			color: rgb(255, 255, 255)
+			font-weight: bold
+			line-height: 1.2
+			margin-bottom: 30px
+		.image-left
+			position: absolute
+			width: 665px
+			height: 665px
+			top: 260px
+			left: 56px
+			background-image: url(../img/girl-bg-img.png)
+			background-size: cover
+
+	.slider-section
+		position: relative
+		.title-footer
+			direction: rtl
+			text-align: right
+			font-size: 30px
+			font-family: "OpenSansHebrew-Light"
+			color: rgb(255, 255, 255)
+			font-weight: bold
+			line-height: 1.2
+			margin-bottom: 40px
+			padding: 0 15px
+		ul
+			position: relative
+			display: flex
+			justify-content: center
+			padding: 0 15px
+			margin: 0 -12px
+			flex-wrap: nowrap
+		li
+			font-size: 21px
+			font-family: "OpenSansHebrew-Regular"
+			color: rgb(255, 255, 255)
+			line-height: 1.296
+			list-style: none
+			padding: 0 12px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			width: 16.6%
+		.wrap-img-footer
+			margin-bottom: 15px
+
+	.wrap-footer
+		.signature
+			display: none
+	.footer
+		font-size: 18px
+		font-family: "OpenSansHebrew-Regular"
+		color: rgb(255, 255, 255)
+		line-height: 1.805
+		position: relative
+		margin-top: 80px
+		text-align: center
+		padding: 60px 0
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%,-50%)
+			height: 2px
+			width: 100px
+			background: white
+
+
+
+	////======================= slic options ====================================
+    //
+	//.slick-next
+	//	//display: none !important
+	//	//background: black
+	//	right: -25px
+	//	z-index: 25
+	//	width: 55px
+	//	height: 90px
+	//	&:before
+	//		content: ''
+	//		border-bottom: 3px solid white
+	//		border-right: 3px solid white
+	//		width: 12px
+	//		height: 12px
+	//		right: 4px
+	//		display: inline-block
+	//		vertical-align: middle
+	//		transform: rotate(-45deg)
+	//		position: relative
+	//.slick-prev
+	//	//display: none !important
+	//	//background: black
+	//	left: -25px
+	//	z-index: 25
+	//	width: 55px
+	//	height: 90px
+	//	&:before
+	//		content: ''
+	//		border-bottom: 3px solid white
+	//		border-left: 3px solid white
+	//		width: 12px
+	//		height: 12px
+	//		left: 4px
+	//		display: inline-block
+	//		vertical-align: middle
+	//		transform: rotate(45deg)
+	//		position: relative
+    //
+	//.slick-prev:hover, .slick-next:hover
+	//	//background: black
+	//.slick-prev:focus, .slick-next:focus
+	//	//background: black
+    //
+	////=================================
+
+
+	.slick-slider
+	direction: ltr
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+	.slick-list
+		position: relative
+		overflow: hidden
+		display: block
+		margin: 0
+		padding: 0
+		width: 100%
+		transform: translate3d(0, 0, 0)
+		&:focus
+			outline: none
+		&.dragging
+			cursor: pointer
+			cursor: hand
+
+	.slick-track
+		position: relative
+		left: 0
+		top: 0
+		display: block
+		transform: translate3d(0, 0, 0)
+
+		&:before,
+		&:after
+			content: ""
+			display: table
+
+		&:after
+			clear: both
+
+	.slick-slide
+		float: left
+		height: 100%
+		min-height: 200px
+
+	.slick-arrow
+		position: absolute
+		border: none
+		outline: none
+		top: 40%
+		width: 25px
+		height: 25px
+		border-left: 5px solid white
+		border-top: 5px solid white
+		z-index: 99999
+
+	.slick-next
+		right: 20px
+		transform: translateY(-50%) rotate(135deg)
+	.slick-prev
+		left: 20px
+		transform: translateY(-50%) rotate(-45deg)
+
+	.slick-arrow.slick-hidden
+		display: none
+
+	.slick-next:before, .slick-prev:before
+		content: none
+
+	//===================== custom select ================================
+	.custom-select-wrapper
+		position: relative
+		display: inline-block
+		user-select: none
+		width: 100%
+
+		.custom-select-wrapper select
+			display: none
+
+		.custom-select
+			position: relative
+			display: inline-block
+			background: white
+
+
+		.custom-select-trigger
+			position: relative
+			display: block
+			font-weight: 300
+			color: #bababa
+			cursor: pointer
+			margin-top: 5px
+
+		.custom-select-trigger:after
+			position: absolute
+			display: block
+			content: ''
+			width: 10px
+			height: 10px
+			top: 50%
+			left: 15px
+			margin-top: -3px
+			border-bottom: 1px solid #bababa
+			border-right: 1px solid #bababa
+			transform: rotate(45deg) translateY(-50%)
+			transition: all .4s ease-in-out
+			transform-origin: 50% 0
+
+		.custom-select.opened .custom-select-trigger:after
+			margin-top: 3px
+			transform: rotate(-135deg) translateY(-50%)
+			z-index: 999999
+
+		.custom-options
+			position: absolute
+			display: block
+			top: 100%
+			left: 0
+			right: 0
+			min-width: 100%
+			margin: 15px 0
+			border: 1px solid #b5b5b5
+			border-radius: 4px
+			box-sizing: border-box
+			box-shadow: 0 2px 1px rgba(0,0,0,.07)
+			background: #fff
+			transition: all .4s ease-in-out
+
+			opacity: 0
+			visibility: hidden
+			pointer-events: none
+			transform: translateY(-15px)
+
+		.custom-select.opened .custom-options
+			opacity: 1
+			visibility: visible
+			pointer-events: all
+			transform: translateY(0)
+
+		.custom-options:before
+			position: absolute
+			display: block
+			content: ''
+			bottom: 100%
+			right: 25px
+			width: 7px
+			height: 7px
+			margin-bottom: -4px
+			border-top: 1px solid #b5b5b5
+			border-left: 1px solid #b5b5b5
+			background: #fff
+			transform: rotate(45deg)
+			transition: all .4s ease-in-out
+
+		.option-hover:before
+			background: #f9f9f9
+
+		.custom-option
+			position: relative
+			display: block
+			padding: 0 22px
+			border-bottom: 1px solid #b5b5b5
+			font-size: 18px
+			font-weight: 600
+			color: #b5b5b5
+			line-height: 47px
+			cursor: pointer
+			transition: all .4s ease-in-out
+
+		.custom-option:first-of-type
+			border-radius: 4px 4px 0 0
+
+		.custom-option:last-of-type
+			border-bottom: 0
+			border-radius: 0 0 4px 4px
+
+		.custom-option:hover,
+		.custom-option.selection
+			background: #f9f9f9
+
+
+	//===================== finish custom select ================================
+
+	//================= thanks page ====================================
+
+	.wrap-thanks-page
+		.header
+			min-height: 619px
+		.thanks-massage
+			text-align: center
+			margin-top: 300px
+			direction: rtl
+			h3
+				font-size: 46px
+				font-family: "OpenSansHebrew-Bold"
+				color: rgb(1, 1, 1)
+				font-weight: bold
+				line-height: 0.822
+			p
+				font-family: "OpenSansHebrew-Regular"
+				font-size: 28px
+				line-height: 1.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
