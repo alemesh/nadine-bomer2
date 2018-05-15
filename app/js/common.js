@@ -96,13 +96,13 @@ $(function() {
 function initSlickCarousel() {
     jQuery('.slick-slider').slick({
         slidesToScroll: 1,
-        slidesToShow: 6,
+        slidesToShow: 5,
         adaptiveHeight: true,
         rows: 0,
         prevArrow: '<span class="slick-prev"></span>',
         nextArrow: '<span class="slick-next"></span>',
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
                 slidesToScroll: 1,
                 slidesToShow: 1
